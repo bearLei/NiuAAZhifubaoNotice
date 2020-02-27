@@ -44,7 +44,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:networkSecurityConfig="@xml/network_security_config"
@@ -53,6 +53,7 @@
         android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity
             android:name="com.aa.notice.MainActivity"
             android:launchMode="singleInstance"
