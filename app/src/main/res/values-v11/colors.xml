@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#424242</color>
+    <color name="white">#ffffff</color> <!-- 白色 -->
+    <color name="main_color">#0071FD</color>
+
+    <color name="common_dialog">#FFFFFF</color><!--弹框背景-->
+    <color name="line_gray">#E0E0E0</color><!--弹框按钮背景-->
+    <color name="dialog_view">#DADADE</color><!--弹框横线-->
+    <color name="dialog_title">#030303</color><!--弹框标题-->
+    <color name="dialog_contnt">#030303</color><!--弹框标题-->
+    <color name="dialog_text">#3478F6</color><!--弹框确定按钮-->
+
+    <color name="blue">#007AFF</color> <!-- 蓝色 -->
+    <color name="text_color">#333333</color>
+</resources>

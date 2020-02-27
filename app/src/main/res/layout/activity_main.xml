@@ -1,0 +1,357 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/main_color">
+
+        <TextView
+            android:id="@+id/tv_home_test"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="测试入口"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_home_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/ic_logout"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="退出"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/start_wechat"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="微信" />
+
+        <Button
+            android:id="@+id/start_alipay"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="支付宝红包" />
+
+        <Button
+            android:id="@+id/start_jd"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="京东"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/start_qq"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="QQ" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="程序配置"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/start_transfer"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="ToCard" />
+
+        <Button
+            android:id="@+id/start_union"
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="union" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/button" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="轮询时间 : "
+        android:visibility="gone" />
+    <!--开始lllllllllllllllllll-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:drawableLeft="@drawable/icon_tip"
+                android:drawablePadding="10dp"
+                android:text="启动前请按照网页填写值，保存即可！>>"
+                android:textColor="#FF9200"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/start_app"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="保存配置"
+                android:textColor="#0284DC"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="当前ip:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/et_ip_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="30dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="0.0.0.0"
+                android:textColorHint="#999999"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="支付宝通知通道:"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/et_alipay_key"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="30dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请设置后台通道账号"
+                android:textColorHint="#999999"
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_right" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="请确保手机通知使用权功能已勾选--支付宝通知监控"
+            android:textColor="@color/blue" />
+
+
+        <Button
+            android:id="@+id/open_notice"
+            android:layout_width="200dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/bg_login_blue_radius"
+            android:text="开启通知栏"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:text="当前通知栏权限是关闭"
+            android:textColor="@color/colorAccent"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/console"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:padding="10dip"
+            android:text="日志输出:"
+            android:textColor="#000000" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/stop_app"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_login_blue_radius"
+            android:text="启动"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp" />
+    </LinearLayout>
+</LinearLayout>
